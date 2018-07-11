@@ -1,0 +1,121 @@
+{{ define "header" }}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Saldão Computadores</title>
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/custom.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        .badge-notify {
+            background: #007bff;
+            position:relative;
+            top: -15px;
+            right: 10px;
+        }
+        .my-cart-icon-affix {
+            position: fixed;
+            z-index: 999;
+        }
+        .modal-dialog {
+            max-width: 700px !important;
+        }
+    </style>
+
+</head>
+<body>
+
+    {{ template "navbar" }}
+{{ end }}
+{{ define "footer"}}
+
+    <footer class="py-3 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Saldão 2018</p>
+        </div>
+
+    </footer>
+
+    <script src="/static/js/jquery-2.2.3.min.js"></script>
+    {{/*<script*/}}
+            {{/*src="https://code.jquery.com/jquery-3.3.1.min.js"*/}}
+            {{/*integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="*/}}
+            {{/*crossorigin="anonymous"></script>*/}}
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.mycart.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            var goToCartIcon = function($addTocartBtn) {
+                var $cartIcon = $(".my-cart-icon");
+                var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+                console.log($image);
+                $addTocartBtn.prepend($image);
+                var position = $cartIcon.position();
+                $image.animate({
+                    top: position.top,
+                    left: position.left
+                }, 500 , "linear", function() {
+                    $image.remove();
+                });
+            };
+
+            var options = {
+                currencySymbol: 'R$',
+                classCartIcon: 'my-cart-icon',
+                classCartBadge: 'my-cart-badge',
+                affixCartIcon: true,
+                showCheckoutModal: true,
+                numberOfDecimals: 2,
+                cartItems: [],
+                clickOnAddToCart: function(e){
+                    console.log(e);
+                    goToCartIcon(e);
+                },
+                checkoutCart: function (products, totalPrice, totalQuantity) {
+
+                    var newProducts = new Array();
+
+                    products.forEach(function (value) {
+                        newProducts.push({
+                            "id": value.id,
+                            "quantity": value.quantity
+                        })
+                    });
+
+
+                    var data = {
+                        products: newProducts,
+                        totalPrice: totalPrice
+                    };
+
+                    console.log(data);
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/purchase",
+                        data: data,
+                        success: function (res) {
+                            console.log(res)
+                        },
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            console.log(textStatus, errorThrown);
+                        }
+                    });
+                }
+            };
+
+            $('.my-cart-btn').myCart(options);
+
+        });
+    </script>
+</body>
+</html>
+
+{{ end }}

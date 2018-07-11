@@ -1,0 +1,282 @@
+[
+	{
+		"datetime": "2018-06-28T14:00:20.31134638-03:00",
+		"host": "casasbahia",
+		"id": 1,
+		"products": [
+			{
+				"id": 1,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 1259
+	},
+	{
+		"datetime": "2018-06-28T14:00:59.948414049-03:00",
+		"host": "casasbahia",
+		"id": 2,
+		"products": [
+			{
+				"id": 1,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 1259
+	},
+	{
+		"datetime": "2018-06-28T14:06:15.108595641-03:00",
+		"host": "casasbahia",
+		"id": 3,
+		"products": [
+			{
+				"id": 2,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 1259
+	},
+	{
+		"datetime": "2018-07-03T01:47:25.466485343-03:00",
+		"host": "",
+		"id": 4,
+		"products": [
+			{
+				"id": 2,
+				"quantity": 1
+			},
+			{
+				"id": 3,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 2958
+	},
+	{
+		"datetime": "2018-07-03T02:13:32.111825354-03:00",
+		"host": "",
+		"id": 5,
+		"products": [
+			{
+				"id": 2,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 699
+	},
+	{
+		"datetime": "2018-07-03T10:53:32.974739084-03:00",
+		"host": "",
+		"id": 6,
+		"products": [
+			{
+				"id": 1,
+				"quantity": 1
+			},
+			{
+				"id": 2,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 1958
+	},
+	{
+		"datetime": "2018-07-03T10:54:15.340478653-03:00",
+		"host": "",
+		"id": 6,
+		"products": [
+			{
+				"id": 3,
+				"quantity": 2
+			}
+		],
+		"totalPrice": 4518
+	},
+	{
+		"datetime": "2018-07-03T10:54:15.340478653-03:00",
+		"host": "",
+		"id": 6,
+		"products": [
+			{
+				"id": 3,
+				"quantity": 2
+			}
+		],
+		"totalPrice": 4518
+	},
+	{
+		"datetime": "2018-07-03T10:57:01.550330565-03:00",
+		"host": "",
+		"id": 7,
+		"products": [
+			{
+				"id": 1,
+				"quantity": 1
+			},
+			{
+				"id": 2,
+				"quantity": 1
+			},
+			{
+				"id": 3,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 4217
+	},
+	{
+		"datetime": "2018-07-03T11:03:04.883085584-03:00",
+		"host": "",
+		"id": 8,
+		"products": [
+			{
+				"id": 1,
+				"quantity": 1
+			},
+			{
+				"id": 2,
+				"quantity": 1
+			},
+			{
+				"id": 3,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 4217
+	},
+	{
+		"datetime": "2018-07-03T11:07:50.960882036-03:00",
+		"host": "",
+		"id": 10,
+		"products": [
+			{
+				"id": 3,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 2259
+	},
+	{
+		"datetime": "2018-07-03T12:22:29.517781328-03:00",
+		"host": "",
+		"id": 11,
+		"products": [
+			{
+				"id": 1,
+				"quantity": 1
+			},
+			{
+				"id": 2,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 1958
+	},
+	{
+		"datetime": "2018-07-03T12:48:36.4936905-03:00",
+		"host": "",
+		"id": 12,
+		"products": [
+			{
+				"id": 2,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 699
+	},
+	{
+		"datetime": "2018-07-03T12:51:46.207580558-03:00",
+		"host": "",
+		"id": 13,
+		"products": [
+			{
+				"id": 1,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 1259
+	},
+	{
+		"datetime": "2018-07-03T13:04:01.591993982-03:00",
+		"host": "",
+		"id": 14,
+		"products": [
+			{
+				"id": 1,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 1259
+	},
+	{
+		"datetime": "2018-07-03T13:05:11.767732463-03:00",
+		"host": "",
+		"id": 15,
+		"products": [
+			{
+				"id": 1,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 1259
+	},
+	{
+		"datetime": "2018-07-10T12:50:48.608041505-03:00",
+		"host": "",
+		"id": 16,
+		"products": [
+			{
+				"id": 2,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 699
+	},
+	{
+		"datetime": "2018-07-10T12:53:21.468471722-03:00",
+		"host": "",
+		"id": 17,
+		"products": [
+			{
+				"id": 2,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 699
+	},
+	{
+		"datetime": "2018-07-10T12:55:35.133923418-03:00",
+		"host": "",
+		"id": 18,
+		"products": [
+			{
+				"id": 2,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 699
+	},
+	{
+		"datetime": "2018-07-10T13:01:42.231256526-03:00",
+		"host": "",
+		"id": 19,
+		"products": [
+			{
+				"id": 2,
+				"quantity": 1
+			}
+		],
+		"totalPrice": 699
+	},
+	{
+		"datetime": "2018-07-10T14:01:14.113975371-03:00",
+		"host": "",
+		"id": 20,
+		"products": [
+			{
+				"id": 2,
+				"quantity": 9
+			}
+		],
+		"totalPrice": 6291
+	}
+]

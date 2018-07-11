@@ -1,0 +1,14 @@
+{{ template "header" }}
+    <main class="py-3">
+        <div class="container mt-3">
+            <h2 class="font-weight-bold text-success">Últimos Produtos</h2>
+
+            <div class="row">
+            {{ range $product := . }}
+                {{ template "product" $product }}
+            {{ end }}
+            </div>
+        </div>
+    </main>
+
+{{ template "footer" }}
